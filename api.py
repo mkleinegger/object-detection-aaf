@@ -25,14 +25,11 @@ class Image(Resource):
 
     def post(self, image_id):
         args = img_post_args.parse_args()
-
         result = object_detection(args["id"], args["image_data"], net)
-
         data[image_id] = {
             "id": args["id"],
             "objects": [{"label": key, "accuracy": value} for key, value in result.items()]
         }
-
         return data[image_id]
 
 
