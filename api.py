@@ -17,12 +17,6 @@ img_post_args.add_argument("image_data", type=str, required=True, help="Image in
 
 
 class Image(Resource):
-    def get(self, image_id):
-        if image_id not in data:
-            abort(404, message="Image ID {} doesn't exist".format(image_id))
-        return data[image_id] 
-        
-
     def post(self, image_id):
         args = img_post_args.parse_args()
         result = object_detection(args["id"], args["image_data"], net)
@@ -33,7 +27,7 @@ class Image(Resource):
         return data[image_id]
 
 
-api.add_resource(Image, "/images/<string:image_id>")
+api.add_resource(Image, "/api/object_detection/<string:image_id>")
 
 
 if __name__ == '__main__':
