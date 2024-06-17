@@ -4,6 +4,7 @@ from yolo_model import load_image_as_base64, load_model, object_detection
 
 
 s3_client = boto3.client("s3")
+dynamodb_client = boto3.client("dynamodb")
 
 
 def lambda_handler(event, context):
@@ -25,14 +26,18 @@ def lambda_handler(event, context):
     print("Do object detection")
     result = object_detection(file_uuid, img_data, net)
     
-    output = {
-            "S3 URL": f"https://{bucket}.s3.amazonaws.com/{key}",
-            "objects": [{"label": key, "accuracy": value} for key, value in result.items()]
-        }
-        
-    print(output)
     
-    ## TODO: Store to DynamoDB
+    print("Load into DynamoDB")
+    objects = [{"label": label.strip(), "accuracy": value} for label, value in result.items() if value > 0.5]
+    dynamodb_item = {
+        "S3-URL": {"S": f"https://{bucket}.s3.amazonaws.com/{key}"},
+        "Objects": {"S": json.dumps(objects)}
+    }
+        
+    print(dynamodb_item)
+    table_name = 'e12239877-detected-objects'
+    dynamodb_client.put_item(TableName=table_name, Item=dynamodb_item)
+
     
     print("Done")
     
