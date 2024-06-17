@@ -1,0 +1,4 @@
+"S3-URL","Inference-Time","Objects"
+"https://e12239877-uploaded-images.s3.amazonaws.com/000000000019.jpg","1.5945103168487549","""[{""""label"""": """"cow"""", """"accuracy"""": 0.6395580768585205}]"""
+"https://e12239877-uploaded-images.s3.amazonaws.com/000000000057.jpg","1.6205229759216309","""[{""""label"""": """"person"""", """"accuracy"""": 0.8698837161064148}, {""""label"""": """"tennis racket"""", """"accuracy"""": 0.6463392376899719}]"""
+"https://e12239877-uploaded-images.s3.amazonaws.com/000000000016.jpg","1.5427329540252686","""[{""""label"""": """"person"""", """"accuracy"""": 0.8198175430297852}, {""""label"""": """"sports ball"""", """"accuracy"""": 0.6291966438293457}]"""
