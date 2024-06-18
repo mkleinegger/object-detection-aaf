@@ -1,6 +1,7 @@
 import base64
 import json
 import os
+import time
 
 import boto3
 from flask import Flask, request
@@ -40,7 +41,10 @@ def upload_image_to_bucket(id, image_data):
 @app.route("/object-detection", methods=["POST"])
 def object_detection_local():
     request_body = json.loads(request.get_json())
+
+    start_time = time.time_ns() // 1_000_000
     result = object_detection(net, request_body["image_data"], CLASSIFICATION_THRESHOLD)
+    end_time = time.time_ns() // 1_000_000
 
     return json.dumps(
         {
@@ -49,18 +53,23 @@ def object_detection_local():
                 {"label": label, "accuracy": accuracy}
                 for label, accuracy in result.items()
             ],
+            "inference_time":  end_time - start_time
         }
     )
 
 @app.route("/object-detection-remote", methods=["POST"])
 def object_detection_remote():
     body = json.loads(request.get_json())
-    url = upload_image_to_bucket(body["id"], body["image_data"])
+    
+    start_time = time.time_ns() // 1_000_000
+    s3_url = upload_image_to_bucket(body["id"], body["image_data"])
+    end_time = time.time_ns() // 1_000_000
 
     return json.dumps(
         {
             "id": body["id"],
-            "s3-url": url,
+            "s3_url": s3_url,
+            "inference_time": end_time - start_time,
         }
     )
 

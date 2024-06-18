@@ -1,10 +1,15 @@
 # Execution
 
-## Local
-### Server
+## Server
+AWS credentials should be located in `~/.aws/credentials`, to make the remote execution work.
 
-    python app.py
+    make build
+    make run
 
-### Client
+## Client: local execution
 
-    python client.py ./input_folder http://localhost:8000/object_detection
+    python src/client.py ./input_folder local http://localhost:5001/object-detection 
+
+## Client: remote execution
+
+    python src/client.py ./input_folder remote http://localhost:5001/object-detection-remote 

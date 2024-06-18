@@ -8,6 +8,8 @@ YOLO_CONFIG = "/tmp/yolov3-tiny.cfg"
 YOLO_WEIGHTS = "/tmp/yolov3-tiny.weights"
 YOLO_CLASS_NAMES = "/tmp/coco.names"
 
+DYNAMODB_TABLE = 'object-detection-12041500'
+
 # AWS
 s3 = boto3.resource('s3')
 dynamodb = boto3.client('dynamodb')
@@ -28,22 +30,20 @@ def lambda_handler(event, context):
     bucket = event["Records"][0]["s3"]["bucket"]["name"]
     key = event["Records"][0]["s3"]["object"]["key"]
     
-    image = boto3.client('s3').get_object(
-        Bucket=bucket,
-        Key=key,
-    )
+    # fetch image
+    obj = s3.Object(bucket, key)
+    image = obj.get()
 
     results = object_detection(net, base64.b64encode(image['Body'].read()), CLASSIFICATION_THRESHOLD)
     
-    table_entry = {'image-url':{'S': key}}
+    # create key/value-pair with key: array of results
+    # table_entry = {'image-url':{'S': key}, 'accuracy': {'S': [(key, value) for key, value in results.items()]}}
     
-    values = [(key, value) for key, value in results.items()]
-    #for key, value in results.items():
-    #    table_entry[key] = {'S': str(value)}
+    # create key/value-pair where each class has its own col
+    table_entry = {'image-url':{'S': f"https://{bucket}.s3.amazonaws.com/{key}"}}
+    for key, value in results.items():
+        table_entry[key] = {'S': str(value)}
     
-    table_entry['accuracy'] = {'S': str(values)}
-    dynamodb.put_item(
-        TableName='object-detection-12041500', 
-        Item=table_entry)
+    dynamodb.put_item(TableName=DYNAMODB_TABLE, Item=table_entry)
     
     return { 'statusCode': 200 }
