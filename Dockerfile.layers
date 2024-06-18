@@ -1,0 +1,19 @@
+FROM amazonlinux
+
+# Set environment variables
+ENV PYTHON_VERSION=3.9
+ENV VIRTUAL_ENV=/opt/venv
+
+# Update and install required packages
+RUN ulimit -n 1024 && yum -y update && yum -y install \
+    python${PYTHON_VERSION} \
+    python${PYTHON_VERSION}-pip \
+    python${PYTHON_VERSION}-devel \
+    zip \
+    && yum clean all
+
+# Upgrade pip
+RUN python3 -m pip install --ignore-installed pip==24.0
+
+# Install virtualenv
+RUN pip install virtualenv
