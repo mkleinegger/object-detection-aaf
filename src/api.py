@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restful import Resource, Api, reqparse, abort 
 from yolo_model import object_detection, load_model
-
+import time
 
 app = Flask(__name__)
 api = Api(app)
@@ -19,10 +19,13 @@ img_post_args.add_argument("image_data", type=str, required=True, help="Image in
 class Image(Resource):
     def post(self, image_id):
         args = img_post_args.parse_args()
+        start = time.time()
         result = object_detection(args["id"], args["image_data"], net)
+        end = time.time()
         data[image_id] = {
             "id": args["id"],
-            "objects": [{"label": key, "accuracy": value} for key, value in result.items()]
+            "objects": [{"label": key, "accuracy": value} for key, value in result.items()],
+            "Inference-Time" : str(end - start)
         }
         return data[image_id]
 

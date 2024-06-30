@@ -18,9 +18,9 @@ def load_image_as_base64(image_path):
 def load_model():
     global class_names, net
 
-    yolo_class_names_path = 'yolo_tiny_configs/coco.names'
-    yolo_configs_path = 'yolo_tiny_configs/yolov3-tiny.cfg'
-    yolo_weights_path = 'yolo_tiny_configs/yolov3-tiny.weights'
+    yolo_class_names_path = '../yolo_tiny_configs/coco.names'
+    yolo_configs_path = '../yolo_tiny_configs/yolov3-tiny.cfg'
+    yolo_weights_path = '../yolo_tiny_configs/yolov3-tiny.weights'
 
 
     # Load the COCO class labels
