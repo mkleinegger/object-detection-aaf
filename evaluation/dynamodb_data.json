@@ -1,256 +1,256 @@
 [
   {
-    "Inference-Time": "1.5836915969848633",
+    "Inference-Time": "1.4983265399932861",
     "Objects": "[{\"label\": \"tennis racket\", \"accuracy\": 0.9044536352157593}, {\"label\": \"person\", \"accuracy\": 0.7885273098945618}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000552.jpg"
   },
   {
-    "Inference-Time": "1.5769591331481934",
+    "Inference-Time": "1.5979082584381104",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.7103785872459412}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000660.jpg"
   },
   {
-    "Inference-Time": "1.5938379764556885",
+    "Inference-Time": "2.340555429458618",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000774.jpg"
   },
   {
-    "Inference-Time": "1.5974364280700684",
+    "Inference-Time": "1.5578954219818115",
     "Objects": "[{\"label\": \"chair\", \"accuracy\": 0.5170283913612366}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000718.jpg"
   },
   {
-    "Inference-Time": "1.5026137828826904",
+    "Inference-Time": "1.5452957153320312",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000155.jpg"
   },
   {
-    "Inference-Time": "1.5000600814819336",
+    "Inference-Time": "2.4982388019561768",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.5677587389945984}, {\"label\": \"tie\", \"accuracy\": 0.5160541534423828}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000202.jpg"
   },
   {
-    "Inference-Time": "1.357832431793213",
+    "Inference-Time": "1.6175551414489746",
     "Objects": "[{\"label\": \"elephant\", \"accuracy\": 0.9559025764465332}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000128.jpg"
   },
   {
-    "Inference-Time": "1.360560655593872",
+    "Inference-Time": "1.5633580684661865",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000275.jpg"
   },
   {
-    "Inference-Time": "1.559894323348999",
+    "Inference-Time": "1.5789515972137451",
     "Objects": "[{\"label\": \"zebra\", \"accuracy\": 0.8473095297813416}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000003188.jpg"
   },
   {
-    "Inference-Time": "1.421386957168579",
+    "Inference-Time": "1.5054893493652344",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000003062.jpg"
   },
   {
-    "Inference-Time": "1.3410282135009766",
+    "Inference-Time": "1.4989237785339355",
     "Objects": "[{\"label\": \"backpack\", \"accuracy\": 0.6387631893157959}, {\"label\": \"person\", \"accuracy\": 0.5220975875854492}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000003090.jpg"
   },
   {
-    "Inference-Time": "1.3620104789733887",
+    "Inference-Time": "1.466001033782959",
     "Objects": "[{\"label\": \"tvmonitor\", \"accuracy\": 0.8826243877410889}, {\"label\": \"person\", \"accuracy\": 0.6008952856063843}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000664.jpg"
   },
   {
-    "Inference-Time": "1.6109819412231445",
+    "Inference-Time": "2.621825933456421",
     "Objects": "[{\"label\": \"parking meter\", \"accuracy\": 0.6066499352455139}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000570.jpg"
   },
   {
-    "Inference-Time": "1.52186918258667",
+    "Inference-Time": "1.6422572135925293",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.68399977684021}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000456.jpg"
   },
   {
-    "Inference-Time": "1.520251750946045",
+    "Inference-Time": "1.579190969467163",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.5420879125595093}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000001076.jpg"
   },
   {
-    "Inference-Time": "2.3792216777801514",
+    "Inference-Time": "1.4773101806640625",
     "Objects": "[{\"label\": \"wine glass\", \"accuracy\": 0.5744618773460388}, {\"label\": \"person\", \"accuracy\": 0.6317387819290161}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000069.jpg"
   },
   {
-    "Inference-Time": "1.5780556201934814",
+    "Inference-Time": "1.5176222324371338",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.9592577815055847}, {\"label\": \"skateboard\", \"accuracy\": 0.6205522418022156}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000003086.jpg"
   },
   {
-    "Inference-Time": "1.4005489349365234",
+    "Inference-Time": "1.5634751319885254",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.6294313073158264}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000453.jpg"
   },
   {
-    "Inference-Time": "1.5019350051879883",
+    "Inference-Time": "1.4635570049285889",
     "Objects": "[{\"label\": \"fork\", \"accuracy\": 0.5636112689971924}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000933.jpg"
   },
   {
-    "Inference-Time": "1.3592479228973389",
+    "Inference-Time": "2.5584330558776855",
     "Objects": "[{\"label\": \"sports ball\", \"accuracy\": 0.968140184879303}, {\"label\": \"tennis racket\", \"accuracy\": 0.6060899496078491}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000001097.jpg"
   },
   {
-    "Inference-Time": "1.5849356651306152",
+    "Inference-Time": "2.5218358039855957",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000188.jpg"
   },
   {
-    "Inference-Time": "1.361846685409546",
+    "Inference-Time": "1.4966950416564941",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000870.jpg"
   },
   {
-    "Inference-Time": "2.401256799697876",
+    "Inference-Time": "1.5821237564086914",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.8198175430297852}, {\"label\": \"sports ball\", \"accuracy\": 0.6291966438293457}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/test.jpg"
   },
   {
-    "Inference-Time": "1.5013236999511719",
+    "Inference-Time": "1.4018628597259521",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000251.jpg"
   },
   {
-    "Inference-Time": "1.6344425678253174",
+    "Inference-Time": "1.5737147331237793",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.5097712874412537}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000318.jpg"
   },
   {
-    "Inference-Time": "1.5028531551361084",
+    "Inference-Time": "1.4222311973571777",
     "Objects": "[{\"label\": \"motorbike\", \"accuracy\": 0.8320334553718567}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000178.jpg"
   },
   {
-    "Inference-Time": "1.3057007789611816",
+    "Inference-Time": "1.5989174842834473",
     "Objects": "[{\"label\": \"tie\", \"accuracy\": 0.5115311145782471}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000171.jpg"
   },
   {
-    "Inference-Time": "1.4981350898742676",
+    "Inference-Time": "1.5619595050811768",
     "Objects": "[{\"label\": \"wine glass\", \"accuracy\": 0.8457478284835815}, {\"label\": \"pizza\", \"accuracy\": 0.62665855884552}, {\"label\": \"bottle\", \"accuracy\": 0.526292085647583}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000183.jpg"
   },
   {
-    "Inference-Time": "1.3565096855163574",
+    "Inference-Time": "1.5988249778747559",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000001024.jpg"
   },
   {
-    "Inference-Time": "1.5821735858917236",
+    "Inference-Time": "1.4795422554016113",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.7569429278373718}, {\"label\": \"pottedplant\", \"accuracy\": 0.5045344829559326}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000686.jpg"
   },
   {
-    "Inference-Time": "1.5763416290283203",
+    "Inference-Time": "2.481705904006958",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000003079.jpg"
   },
   {
-    "Inference-Time": "1.5604557991027832",
+    "Inference-Time": "1.6419129371643066",
     "Objects": "[{\"label\": \"car\", \"accuracy\": 0.5392357110977173}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000001127.jpg"
   },
   {
-    "Inference-Time": "1.5207390785217285",
+    "Inference-Time": "1.5450327396392822",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000001172.jpg"
   },
   {
-    "Inference-Time": "1.5418782234191895",
+    "Inference-Time": "2.5956876277923584",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000759.jpg"
   },
   {
-    "Inference-Time": "1.3619170188903809",
+    "Inference-Time": "1.556274175643921",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000003083.jpg"
   },
   {
-    "Inference-Time": "1.3609931468963623",
+    "Inference-Time": "2.5011677742004395",
     "Objects": "[{\"label\": \"giraffe\", \"accuracy\": 0.7347346544265747}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000953.jpg"
   },
   {
-    "Inference-Time": "1.6791715621948242",
+    "Inference-Time": "1.604551076889038",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000662.jpg"
   },
   {
-    "Inference-Time": "1.3403565883636475",
+    "Inference-Time": "1.4805574417114258",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000345.jpg"
   },
   {
-    "Inference-Time": "2.480637550354004",
+    "Inference-Time": "2.4803709983825684",
     "Objects": "[{\"label\": \"cow\", \"accuracy\": 0.6395580768585205}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000019.jpg"
   },
   {
-    "Inference-Time": "1.358802318572998",
+    "Inference-Time": "1.5982701778411865",
     "Objects": "[{\"label\": \"toilet\", \"accuracy\": 0.9725949764251709}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000001242.jpg"
   },
   {
-    "Inference-Time": "1.3962738513946533",
+    "Inference-Time": "1.5202343463897705",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000001198.jpg"
   },
   {
-    "Inference-Time": "1.3388569355010986",
+    "Inference-Time": "1.464890480041504",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.6710710525512695}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000676.jpg"
   },
   {
-    "Inference-Time": "1.6169705390930176",
+    "Inference-Time": "1.679081678390503",
     "Objects": "[{\"label\": \"clock\", \"accuracy\": 0.877075731754303}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000276.jpg"
   },
   {
-    "Inference-Time": "1.5987985134124756",
+    "Inference-Time": "1.6185088157653809",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000665.jpg"
   },
   {
-    "Inference-Time": "1.3620681762695312",
+    "Inference-Time": "1.4848542213439941",
     "Objects": "[{\"label\": \"chair\", \"accuracy\": 0.7197519540786743}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000001194.jpg"
   },
   {
-    "Inference-Time": "2.5619773864746094",
+    "Inference-Time": "1.5024049282073975",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.8698837161064148}, {\"label\": \"tennis racket\", \"accuracy\": 0.6463392376899719}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000057.jpg"
   },
   {
-    "Inference-Time": "1.5600221157073975",
+    "Inference-Time": "1.682173252105713",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.8384290337562561}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000212.jpg"
   },
   {
-    "Inference-Time": "1.5591163635253906",
+    "Inference-Time": "1.763167381286621",
     "Objects": "[{\"label\": \"car\", \"accuracy\": 0.6390714049339294}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000003098.jpg"
   },
   {
-    "Inference-Time": "1.3788046836853027",
+    "Inference-Time": "1.4180827140808105",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.8530287742614746}, {\"label\": \"sports ball\", \"accuracy\": 0.7321022748947144}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000725.jpg"
   },
   {
-    "Inference-Time": "2.556870698928833",
+    "Inference-Time": "1.5372169017791748",
     "Objects": "[{\"label\": \"zebra\", \"accuracy\": 0.9284520149230957}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000080.jpg"
   },
   {
-    "Inference-Time": "1.3165397644042969",
+    "Inference-Time": "1.4639129638671875",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000427.jpg"
   },
@@ -260,87 +260,87 @@
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000408.jpg"
   },
   {
-    "Inference-Time": "1.6797845363616943",
+    "Inference-Time": "1.6033165454864502",
     "Objects": "[{\"label\": \"cat\", \"accuracy\": 0.5109599828720093}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000888.jpg"
   },
   {
-    "Inference-Time": "1.5795912742614746",
+    "Inference-Time": "2.5397634506225586",
     "Objects": "[{\"label\": \"cat\", \"accuracy\": 0.9319427609443665}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000968.jpg"
   },
   {
-    "Inference-Time": "1.354130506515503",
+    "Inference-Time": "1.7058820724487305",
     "Objects": "[{\"label\": \"fire hydrant\", \"accuracy\": 0.9159075021743774}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000549.jpg"
   },
   {
-    "Inference-Time": "1.5601305961608887",
+    "Inference-Time": "2.5568196773529053",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000229.jpg"
   },
   {
-    "Inference-Time": "1.7178459167480469",
+    "Inference-Time": "1.4392735958099365",
     "Objects": "[{\"label\": \"train\", \"accuracy\": 0.9197226762771606}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000108.jpg"
   },
   {
-    "Inference-Time": "1.562382459640503",
+    "Inference-Time": "1.5595200061798096",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.8680655360221863}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000001175.jpg"
   },
   {
-    "Inference-Time": "1.616783618927002",
+    "Inference-Time": "1.6580262184143066",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.8373982310295105}, {\"label\": \"tennis racket\", \"accuracy\": 0.5805988907814026}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000003136.jpg"
   },
   {
-    "Inference-Time": "1.5616710186004639",
+    "Inference-Time": "1.51763916015625",
     "Objects": "[{\"label\": \"bird\", \"accuracy\": 0.5754974484443665}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000904.jpg"
   },
   {
-    "Inference-Time": "1.3418450355529785",
+    "Inference-Time": "1.5993411540985107",
     "Objects": "[{\"label\": \"zebra\", \"accuracy\": 0.857231855392456}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000527.jpg"
   },
   {
-    "Inference-Time": "1.579261302947998",
+    "Inference-Time": "1.5980842113494873",
     "Objects": "[{\"label\": \"clock\", \"accuracy\": 0.8320177793502808}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000003104.jpg"
   },
   {
-    "Inference-Time": "1.4249966144561768",
+    "Inference-Time": "1.4796936511993408",
     "Objects": "[{\"label\": \"cow\", \"accuracy\": 0.8048258423805237}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000090.jpg"
   },
   {
-    "Inference-Time": "1.6740343570709229",
+    "Inference-Time": "1.4430465698242188",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000492.jpg"
   },
   {
-    "Inference-Time": "1.5862250328063965",
+    "Inference-Time": "1.6775109767913818",
     "Objects": "[{\"label\": \"motorbike\", \"accuracy\": 0.5024407505989075}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000979.jpg"
   },
   {
-    "Inference-Time": "1.5803165435791016",
+    "Inference-Time": "1.5739755630493164",
     "Objects": "[{\"label\": \"laptop\", \"accuracy\": 0.9457632303237915}, {\"label\": \"tvmonitor\", \"accuracy\": 0.7987861633300781}, {\"label\": \"keyboard\", \"accuracy\": 0.7382356524467468}, {\"label\": \"mouse\", \"accuracy\": 0.7134348750114441}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000509.jpg"
   },
   {
-    "Inference-Time": "1.5422725677490234",
+    "Inference-Time": "1.4178564548492432",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000003058.jpg"
   },
   {
-    "Inference-Time": "1.5030992031097412",
+    "Inference-Time": "1.5176050662994385",
     "Objects": "[{\"label\": \"aeroplane\", \"accuracy\": 0.6291376948356628}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000647.jpg"
   },
   {
-    "Inference-Time": "1.3625378608703613",
+    "Inference-Time": "2.422149896621704",
     "Objects": "[{\"label\": \"stop sign\", \"accuracy\": 0.9213705658912659}, {\"label\": \"car\", \"accuracy\": 0.6973753571510315}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000771.jpg"
   },
@@ -350,92 +350,92 @@
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000970.jpg"
   },
   {
-    "Inference-Time": "1.4558401107788086",
+    "Inference-Time": "1.4649302959442139",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000001195.jpg"
   },
   {
-    "Inference-Time": "1.3414850234985352",
+    "Inference-Time": "1.5379109382629395",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.7264796495437622}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000890.jpg"
   },
   {
-    "Inference-Time": "1.3451898097991943",
+    "Inference-Time": "1.3931264877319336",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000851.jpg"
   },
   {
-    "Inference-Time": "1.3591299057006836",
+    "Inference-Time": "1.463322401046753",
     "Objects": "[{\"label\": \"giraffe\", \"accuracy\": 0.6294236779212952}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000003065.jpg"
   },
   {
-    "Inference-Time": "2.4800446033477783",
+    "Inference-Time": "1.5036184787750244",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000001.jpg"
   },
   {
-    "Inference-Time": "1.3223049640655518",
+    "Inference-Time": "1.4800641536712646",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.5078178644180298}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000619.jpg"
   },
   {
-    "Inference-Time": "1.9426050186157227",
+    "Inference-Time": "1.578521728515625",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.9276288747787476}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000063.jpg"
   },
   {
-    "Inference-Time": "1.5077433586120605",
+    "Inference-Time": "1.539203405380249",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000535.jpg"
   },
   {
-    "Inference-Time": "1.3598830699920654",
+    "Inference-Time": "1.4948902130126953",
     "Objects": "[{\"label\": \"kite\", \"accuracy\": 0.6215581893920898}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000003111.jpg"
   },
   {
-    "Inference-Time": "1.6787705421447754",
+    "Inference-Time": "2.457897663116455",
     "Objects": "[{\"label\": \"carrot\", \"accuracy\": 0.5723804831504822}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000161.jpg"
   },
   {
-    "Inference-Time": "1.5148098468780518",
+    "Inference-Time": "2.5017597675323486",
     "Objects": "[{\"label\": \"oven\", \"accuracy\": 0.6911782026290894}, {\"label\": \"sink\", \"accuracy\": 0.7101945877075195}, {\"label\": \"microwave\", \"accuracy\": 0.6374997496604919}, {\"label\": \"refrigerator\", \"accuracy\": 0.5849629640579224}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000809.jpg"
   },
   {
-    "Inference-Time": "1.599226713180542",
+    "Inference-Time": "1.4591243267059326",
     "Objects": "[{\"label\": \"frisbee\", \"accuracy\": 0.5882787704467773}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000106.jpg"
   },
   {
-    "Inference-Time": "1.5775082111358643",
+    "Inference-Time": "1.5616786479949951",
     "Objects": "[{\"label\": \"chair\", \"accuracy\": 0.5437053442001343}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000001192.jpg"
   },
   {
-    "Inference-Time": "1.5842723846435547",
+    "Inference-Time": "1.558861494064331",
     "Objects": "[{\"label\": \"hot dog\", \"accuracy\": 0.9235485792160034}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000001118.jpg"
   },
   {
-    "Inference-Time": "1.5977301597595215",
+    "Inference-Time": "1.6199078559875488",
     "Objects": "[{\"label\": \"cat\", \"accuracy\": 0.6615480184555054}, {\"label\": \"person\", \"accuracy\": 0.5334598422050476}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000674.jpg"
   },
   {
-    "Inference-Time": "1.5436923503875732",
+    "Inference-Time": "1.5809752941131592",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000180.jpg"
   },
   {
-    "Inference-Time": "1.6011333465576172",
+    "Inference-Time": "1.518139123916626",
     "Objects": "[{\"label\": \"boat\", \"accuracy\": 0.6701053380966187}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000416.jpg"
   },
   {
-    "Inference-Time": "1.40016508102417",
+    "Inference-Time": "1.4013891220092773",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.6373527646064758}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000001152.jpg"
   },
@@ -445,62 +445,62 @@
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000554.jpg"
   },
   {
-    "Inference-Time": "1.5753519535064697",
+    "Inference-Time": "2.560581684112549",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.8369681239128113}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000003081.jpg"
   },
   {
-    "Inference-Time": "1.3739988803863525",
+    "Inference-Time": "1.6418187618255615",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000463.jpg"
   },
   {
-    "Inference-Time": "1.3436849117279053",
+    "Inference-Time": "1.5985355377197266",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000191.jpg"
   },
   {
-    "Inference-Time": "1.5403461456298828",
+    "Inference-Time": "1.5412006378173828",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.6708400249481201}, {\"label\": \"cup\", \"accuracy\": 0.7422289848327637}, {\"label\": \"bowl\", \"accuracy\": 0.6237394213676453}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000448.jpg"
   },
   {
-    "Inference-Time": "1.501110553741455",
+    "Inference-Time": "1.462686538696289",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000003191.jpg"
   },
   {
-    "Inference-Time": "2.2385520935058594",
+    "Inference-Time": "2.441152572631836",
     "Objects": "[{\"label\": \"person\", \"accuracy\": 0.8198175430297852}, {\"label\": \"sports ball\", \"accuracy\": 0.6291966438293457}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000016.jpg"
   },
   {
-    "Inference-Time": "1.503242015838623",
+    "Inference-Time": "1.4946784973144531",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000311.jpg"
   },
   {
-    "Inference-Time": "1.3387234210968018",
+    "Inference-Time": "1.6614718437194824",
     "Objects": "[{\"label\": \"bus\", \"accuracy\": 0.8302894830703735}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000694.jpg"
   },
   {
-    "Inference-Time": "1.5796678066253662",
+    "Inference-Time": "2.4385464191436768",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000205.jpg"
   },
   {
-    "Inference-Time": "1.5005803108215332",
+    "Inference-Time": "1.544440507888794",
     "Objects": "[{\"label\": \"traffic light\", \"accuracy\": 0.6498695015907288}]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000001124.jpg"
   },
   {
-    "Inference-Time": "1.5789117813110352",
+    "Inference-Time": "1.5467534065246582",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000880.jpg"
   },
   {
-    "Inference-Time": "1.702866554260254",
+    "Inference-Time": "2.4411938190460205",
     "Objects": "[]",
     "S3-URL": "https://e12239877-uploaded-images.s3.amazonaws.com/000000000748.jpg"
   }

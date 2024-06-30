@@ -2,6 +2,7 @@ import os
 from yolo_model import load_image_as_base64
 import requests
 import sys
+import json
 
 
 input_folder = sys.argv[1]
@@ -16,3 +17,6 @@ for file_name in os.listdir(input_folder):
 
     response = requests.post(f"{endpoint}/{uuid}",json=post_data)
     print(response.json())
+
+    with open("../evaluation/results_local.json", "w") as file:
+        json.dump(response.json(), file)
