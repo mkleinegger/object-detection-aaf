@@ -1,4 +1,5 @@
 import json
+import time
 import boto3
 from yolo_model import load_image_as_base64, load_model, object_detection
 
@@ -24,14 +25,16 @@ def lambda_handler(event, context):
     net = load_model(s3_client)
     
     print("Do object detection")
+    start = time.time()
     result = object_detection(file_uuid, img_data, net)
-    
+    end = time.time()
     
     print("Load into DynamoDB")
     objects = [{"label": label.strip(), "accuracy": value} for label, value in result.items() if value > 0.5]
     dynamodb_item = {
         "S3-URL": {"S": f"https://{bucket}.s3.amazonaws.com/{key}"},
-        "Objects": {"S": json.dumps(objects)}
+        "Objects": {"S": json.dumps(objects)},
+        "Inference-Time": {"N": str(end - start)}
     }
         
     print(dynamodb_item)
