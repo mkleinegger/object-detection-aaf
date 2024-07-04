@@ -9,7 +9,7 @@ import base64
 
 def local_object_detection(response):
     result = response.json()
-    print(f"-> Received following objects for id '{result['id']}' with inference-time {result['inference_time']}:")
+    print(f"-> Received following objects for id '{result['id']}' with inference-time {result['inference_time']}ms:")
     if len(result["objects"]) == 0:
         print(f"   No objects could be detected!")
     else:
@@ -20,7 +20,7 @@ def local_object_detection(response):
 
 def remote_object_detection(response):
     result = response.json()
-    print(f"-> Image with id '{result['id']}' was uploaded to '{result['s3_url']}' with transfer-time {result['inference_time']}")
+    print(f"-> Image with id '{result['id']}' was uploaded to '{result['s3_url']}' with transfer-time {result['inference_time']}ms")
     
     return result['inference_time']
 
