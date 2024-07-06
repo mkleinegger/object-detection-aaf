@@ -1,8 +1,0 @@
-- Create new ECR instance
-    - URL: 703610774578.dkr.ecr.us-east-1.amazonaws.com/container-registry-group41
-- Authenticate Docker client
-    - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 703610774578.dkr.ecr.us-east-1.amazonaws.com
-- Build docker image
-    - `docker build -t 703610774578.dkr.ecr.us-east-1.amazonaws.com/container-registry-group41 .`
-- Push docker image
-    - `docker push 703610774578.dkr.ecr.us-east-1.amazonaws.com/container-registry-group41`
