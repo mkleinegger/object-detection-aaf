@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 # AWS
 s3 = boto3.resource('s3')
-BUCKET_NAME = "image-storage-e12041500"
+BUCKET_NAME = "image-bucket-group41"
 
 # YOLO
 net = None

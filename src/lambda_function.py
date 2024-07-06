@@ -1,30 +1,24 @@
 import boto3
 import base64
 from yolo_model import setup, object_detection
+import os
 
 # AWS
-YOLO_CONFIG_BUCKET_NAME = "config-storage-e12041500"
-YOLO_CONFIG = "/tmp/yolov3-tiny.cfg"
-YOLO_WEIGHTS = "/tmp/yolov3-tiny.weights"
-YOLO_CLASS_NAMES = "/tmp/coco.names"
+YOLO_CONFIG = os.path.abspath("./yolo_configs/yolov3-tiny.cfg")
+YOLO_WEIGHTS = os.path.abspath("./yolo_configs/yolov3-tiny.weights")
+YOLO_CLASS_NAMES = os.path.abspath("./yolo_configs/coco.names")
 
-DYNAMODB_TABLE = 'object-detection-12041500'
+DYNAMODB_TABLE = 'object-detection-group41'
 
 # AWS
 s3 = boto3.resource('s3')
-dynamodb = boto3.client('dynamodb')
+dynamodb = boto3.client('dynamodb', region_name='us-east-1')
 
 # YOLO
 CLASSIFICATION_THRESHOLD = 0.5
 
-def fetch_config():
-    yolo_config_bucket = s3.Bucket(YOLO_CONFIG_BUCKET_NAME)
-    for s3_object in yolo_config_bucket.objects.all():
-        filename = f"/tmp/{s3_object.key}"
-        s3.Bucket(YOLO_CONFIG_BUCKET_NAME).download_file(s3_object.key, filename)
 
-def lambda_handler(event, context):
-    fetch_config()
+def handler(event, context):
     net = setup(YOLO_CONFIG, YOLO_WEIGHTS, YOLO_CLASS_NAMES)
     
     bucket = event["Records"][0]["s3"]["bucket"]["name"]
