@@ -12,7 +12,7 @@ make run
 ## Client: local execution
 
 ```{bash}
-    python src/client.py ./input_folder local http://localhost:5001/object-detection
+python src/client.py ./input_folder local http://localhost:5001/object-detection
 ```
 
 ## Client: remote execution
