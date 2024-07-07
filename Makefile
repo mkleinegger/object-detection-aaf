@@ -54,7 +54,7 @@ create-detection-table:
 create-lambda:
 	aws lambda create-function --function-name object-detection --package-type Image --region $(AWS_REGION) --code ImageUri=$(AWS_REGISTRY)/$(AWS_IMAGE):latest --role arn:aws:iam::$(AWS_ACCOUNT_ID):role/LabRole --memory-size 512 --timeout 15 --no-cli-pager
 	aws lambda wait function-active --function-name object-detection --region $(AWS_REGION)
-	aws lambda add-permission --function-name object-detection --region $(AWS_REGION) --principal s3.amazonaws.com --statement-id s3invoke --action "lambda:InvokeFunction" --source-arn arn:aws:s3:::image-bucket-group41 --source-account $(AWS_ACCOUNT_ID) --no-cli-pager
+	aws lambda add-permission --function-name object-detection --region $(AWS_REGION) --principal s3.amazonaws.com --statement-id s3invoke --action "lambda:InvokeFunction" --source-arn arn:aws:s3:::$(AWS_IMAGE_BUCKET) --source-account $(AWS_ACCOUNT_ID) --no-cli-pager
 	aws s3api put-bucket-notification-configuration --bucket $(AWS_IMAGE_BUCKET) --notification-configuration '{"LambdaFunctionConfigurations":[{"LambdaFunctionArn":"arn:aws:lambda:us-east-1:$(AWS_ACCOUNT_ID):function:object-detection","Events":["s3:ObjectCreated:*"]}]}' --no-cli-pager
 
 # Delete the AWS ECR repository
