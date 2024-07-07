@@ -31,7 +31,7 @@ docker-aws-login:
 
 # Create AWS ECR repository
 create-aws-repository:
-	aws ecr create-repository --region $(AWS_REGION) --repository-name $(AWS_IMAGE)
+	aws ecr create-repository --region $(AWS_REGION) --repository-name $(AWS_IMAGE) --no-cli-pager
 
 # Build the Lambda Docker image
 build-lambda:
@@ -44,22 +44,22 @@ push-lambda:
 
 # Create the S3 bucket for images
 create-image-bucket:
-	aws s3api create-bucket --region $(AWS_REGION) --bucket $(AWS_IMAGE_BUCKET)
+	aws s3api create-bucket --region $(AWS_REGION) --bucket $(AWS_IMAGE_BUCKET) --no-cli-pager
 
 # Create the DynamoDB table for detections
 create-detection-table:
-	aws dynamodb create-table --region $(AWS_REGION) --table-name $(AWS_DETECTION_TABLE) --attribute-definitions AttributeName=image-url,AttributeType=S --key-schema AttributeName=image-url,KeyType=HASH --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5 --table-class STANDARD
+	aws dynamodb create-table --region $(AWS_REGION) --table-name $(AWS_DETECTION_TABLE) --attribute-definitions AttributeName=image-url,AttributeType=S --key-schema AttributeName=image-url,KeyType=HASH --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5 --table-class STANDARD --no-cli-pager
 
 # Create the Lambda function with the S3 trigger
 create-lambda:
-	aws lambda create-function --function-name object-detection --package-type Image --region $(AWS_REGION) --code ImageUri=$(AWS_REGISTRY)/$(AWS_IMAGE):latest --role arn:aws:iam::$(AWS_ACCOUNT_ID):role/LabRole --memory-size 512 --timeout 15 --no-paginate
+	aws lambda create-function --function-name object-detection --package-type Image --region $(AWS_REGION) --code ImageUri=$(AWS_REGISTRY)/$(AWS_IMAGE):latest --role arn:aws:iam::$(AWS_ACCOUNT_ID):role/LabRole --memory-size 512 --timeout 15 --no-cli-pager
 	aws lambda wait function-active --function-name object-detection --region $(AWS_REGION)
-	aws lambda add-permission --function-name object-detection --region $(AWS_REGION) --principal s3.amazonaws.com --statement-id s3invoke --action "lambda:InvokeFunction" --source-arn arn:aws:s3:::image-bucket-group41 --source-account $(AWS_ACCOUNT_ID)
-	aws s3api put-bucket-notification-configuration --bucket $(AWS_IMAGE_BUCKET) --notification-configuration '{"LambdaFunctionConfigurations":[{"LambdaFunctionArn":"arn:aws:lambda:us-east-1:$(AWS_ACCOUNT_ID):function:object-detection","Events":["s3:ObjectCreated:*"]}]}'
+	aws lambda add-permission --function-name object-detection --region $(AWS_REGION) --principal s3.amazonaws.com --statement-id s3invoke --action "lambda:InvokeFunction" --source-arn arn:aws:s3:::image-bucket-group41 --source-account $(AWS_ACCOUNT_ID) --no-cli-pager
+	aws s3api put-bucket-notification-configuration --bucket $(AWS_IMAGE_BUCKET) --notification-configuration '{"LambdaFunctionConfigurations":[{"LambdaFunctionArn":"arn:aws:lambda:us-east-1:$(AWS_ACCOUNT_ID):function:object-detection","Events":["s3:ObjectCreated:*"]}]}' --no-cli-pager
 
 # Delete the AWS ECR repository
 delete-repository:
-	-aws ecr delete-repository --region $(AWS_REGION) --repository-name $(AWS_IMAGE) --force
+	-aws ecr delete-repository --region $(AWS_REGION) --repository-name $(AWS_IMAGE) --force --no-cli-pager
 
 # Delete the S3 bucket for images
 delete-image-bucket:
@@ -68,7 +68,7 @@ delete-image-bucket:
 
 # Delete the DynamoDB table for detections
 delete-detection-table:
-	-aws dynamodb delete-table --region $(AWS_REGION) --table-name $(AWS_DETECTION_TABLE)
+	-aws dynamodb delete-table --region $(AWS_REGION) --table-name $(AWS_DETECTION_TABLE) --no-cli-pager
 
 # Delete the Lambda function
 delete-lambda:
