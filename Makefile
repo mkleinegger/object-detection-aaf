@@ -11,13 +11,21 @@ AWS_DETECTION_TABLE := object-detection-group41
 
 .PHONY: build run lambda-setup lambda-teardown docker-aws-login create-aws-repository build-lambda push-lambda create-image-bucket create-detection-table create-lambda delete-repository delete-lambda delete-image-bucket delete-detection-table delete-lambda
 
-# Build the Docker image
+# Build the Docker image for the API
 build:
 	docker build -t $(API_IMAGE_NAME) .
 
-# Run the Docker container
-run:
+# Start the Docker container serving the API
+start:
 	docker run --rm -p 5001:5001 -v$(AWS_CREDENTIALS_FILE):/root/.aws/credentials:ro $(API_IMAGE_NAME)
+
+# Execute the object detection task for all images locally
+execute:
+	python src/client.py ./input_folder local http://localhost:5001/object-detection
+
+# Execute the object detection task for all images remotely
+execute-remote:
+	python src/client.py ./input_folder remote http://localhost:5001/object-detection-remote
 
 # Set up AWS infrastructure to run the lambda function
 lambda-setup: docker-aws-login create-aws-repository build-lambda push-lambda create-image-bucket create-detection-table create-lambda
