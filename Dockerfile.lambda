@@ -1,0 +1,11 @@
+FROM public.ecr.aws/lambda/python:3.9
+
+WORKDIR /app
+COPY ./requirements.txt .
+
+RUN pip install -r ./requirements.txt
+
+COPY ./yolo_configs/ ./yolo_configs/
+COPY ./src/lambda_function.py ./src/yolo_model.py ${LAMBDA_TASK_ROOT}
+
+CMD [ "lambda_function.handler" ]
